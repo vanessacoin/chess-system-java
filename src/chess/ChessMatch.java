@@ -7,7 +7,7 @@ import chess.pieces.King;
 import chess.pieces.Rook;
 
 public class ChessMatch {
-	
+
 	private Board board;
 	
 	public ChessMatch() {
@@ -25,20 +25,26 @@ public class ChessMatch {
 		return mat;
 	}
 	
-	private Piece makeMove(Position source, Position target) {
-		Piece p = board.removePiece(source);
-		Piece capturedPiece = board.removePiece(target);
-		board.placePiece(p, target);
-		return capturedPiece;
+	public boolean[][] possibleMoves(ChessPosition sourcePosition) {
+		Position position = sourcePosition.toPosition();
+		validateSourcePosition(position);
+		return board.piece(position).possibleMoves();
 	}
 	
-	public ChessPiece performeChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
+	public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
 		Position source = sourcePosition.toPosition();
 		Position target = targetPosition.toPosition();
 		validateSourcePosition(source);
 		validateTargetPosition(source, target);
 		Piece capturedPiece = makeMove(source, target);
 		return (ChessPiece)capturedPiece;
+	}
+	
+	private Piece makeMove(Position source, Position target) {
+		Piece p = board.removePiece(source);
+		Piece capturedPiece = board.removePiece(target);
+		board.placePiece(p, target);
+		return capturedPiece;
 	}
 	
 	private void validateSourcePosition(Position position) {
