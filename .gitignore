@@ -23,4 +23,8 @@
 hs_err_pid*
 
 # Eclipse
+<<<<<<< HEAD
 .settings/
+=======
+.settings/
+>>>>>>> 2ae9b925b0f98a644f50789fe68c8f0d2e61b916
