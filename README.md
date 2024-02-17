@@ -5,7 +5,7 @@
 
 # Sobre o projeto
 
-O projeto consiste em uma aplicação back-end construída durante o cusrso Java COMPLETO Programação Orientada a Objetos + Projetos organizado pelo professor Nelio Alves na plataforma Udemy.
+O projeto consiste em uma aplicação back-end construída durante o curso Java COMPLETO Programação Orientada a Objetos + Projetos organizado pelo professor Nelio Alves na plataforma Udemy.
 
 
 ## Objetivo Geral
