@@ -17,7 +17,7 @@ O projeto consiste em uma aplicação back-end construída durante o curso Java 
 ## Tópicos de POO:
 - Encapsulamento
 - Construtores
-- ToString (objeto/substituição)
+- ToString (Object / overriding)
 - Associações
 - Modificadores de acesso
 - Matriz
